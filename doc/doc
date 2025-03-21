@@ -1,0 +1,39 @@
+<!DOCTYPE html lang="en">
+<head>
+<title>Device Resources</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href=".../css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<li> General commands Git
+git add *
+git status
+git commit -m "draft"
+git push
+
+git remote add origin (link to repo)
+</li>
+----------
+<li> Steps to publish your page on GitHub Pages:
+Go to your GitHub repo (e.g., https://github.com/Zkm0/DEV320W25View1).
+
+Click on the Settings tab.
+
+Scroll down to "Pages" on the left sidebar (sometimes it’s under “Code and automation” > “Pages”).
+
+Under “Build and deployment”, select:
+
+Source: Deploy from a branch
+Branch: Choose main
+Folder: Choose / (root) if your index.html is at the root (based on your screenshot, it is! ✅)
+Click Save.
+
+GitHub will generate a live URL, something like:
+
+
+https://zkm0.github.io/DEV320W25View1/
+Wait 1–2 minutes and then open that URL — your index.html will appear live online!
+</li>
+</body>
