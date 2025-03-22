@@ -7,7 +7,7 @@ div {
 
 /* Default styling for mobile (small screens) */
 .col {
-    background-color: rgb(237, 203, 215); /* soft pink */
+    background-color: rgb(185, 228, 236); /* soft blue */
 }
 
 /* Tablet size and up */
@@ -20,7 +20,7 @@ div {
 /* Desktop (medium screens and up) */
 @media only screen and (min-width: 992px) {
     .col {
-        background-color: rgb(185, 228, 236); /* light blue */
+        background-color:rgb(237, 203, 215); /* light pink */
     }
 }
 
