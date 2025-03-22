@@ -1,47 +1,85 @@
+/* Reset some basic styling */
+body {
+    background-color: #f5f9fc;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
 
-        div {
-            border: solid;
-        }
+/* Container background */
+.container-fluid {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
+/* Column styling */
+.col {
+    background-color: #e3f2fd;
+    border: 1px solid #b0c4de;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
 
-        @media only screen and (min-width: 100px) {
-            /* For tablets: */
+/* Headings and labels */
+.col span.strong,
+.col strong {
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+    color: #1a237e;
+}
 
-            /* this will change the container class background to red when tablet*/
+/* Paragraph spacing */
+.col p {
+    margin-bottom: 10px;
+}
 
-            .col {
-                background-color: rgb(237, 203, 215);
-            }
-        }
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+}
 
-        @media only screen and (min-width: 768px) {
-            /* For desktop: will change the container class to orange*/
+/* Links */
+a {
+    color: #1565c0;
+    font-weight: bold;
+    text-decoration: none;
+}
 
-            .col {
-                background-color: rgb(192, 240, 219);
-            }
-        }
+a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
 
-        @media only screen and (min-width: 992px) {
-            /* For desktop: will change the container class to orange*/
+/* Footer link (like View Web Resources) */
+a.footer-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.05em;
+    color: #2e7d32;
+}
 
-            .col {
-                background-color: rgb(185, 228, 236);
-            }
-        }
+a.footer-link:hover {
+    color: #1b5e20;
+}
 
-        @media only screen and (min-width: 1200px) {
-            /* For desktop: will change the container class to orange*/
+/* Section-specific tweaks (if needed later) */
+.education,
+.experience,
+.interests,
+.hobbies {
+    background-color: #fffde7;
+    padding: 15px;
+    border-left: 5px solid #fbc02d;
+    margin-top: 10px;
+}
 
-            .col {
-                background-color: rgb(245, 223, 236);
-            }
-        }
-
-        Orientation of landscape
-
-        @media only screen and (orientation: landscape) {
-            /* this will change the background to light blue when view is landscape */
-            background-color: lightblue;
-        }
-    
