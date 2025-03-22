@@ -1,85 +1,39 @@
-/* Reset some basic styling */
-body {
-    background-color: #f5f9fc;
-    color: #333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-/* Container background */
-.container-fluid {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Column styling */
-.col {
-    background-color: #e3f2fd;
-    border: 1px solid #b0c4de;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-/* Headings and labels */
-.col span.strong,
-.col strong {
-    font-weight: bold;
-    font-size: 1.1em;
-    display: block;
-    margin-bottom: 10px;
-    color: #1a237e;
-}
-
-/* Paragraph spacing */
-.col p {
-    margin-bottom: 10px;
-}
-
-/* Image styling */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border: 2px solid #ccc;
-}
-
-/* Links */
-a {
-    color: #1565c0;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0d47a1;
-    text-decoration: underline;
-}
-
-/* Footer link (like View Web Resources) */
-a.footer-link {
-    display: block;
-    margin-top: 20px;
-    font-size: 1.05em;
-    color: #2e7d32;
-}
-
-a.footer-link:hover {
-    color: #1b5e20;
-}
-
-/* Section-specific tweaks (if needed later) */
-.education,
-.experience,
-.interests,
-.hobbies {
-    background-color: #fffde7;
+/* Base: All divs have borders */
+div {
+    border: solid 1px #000;
     padding: 15px;
-    border-left: 5px solid #fbc02d;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+/* Default styling for mobile (small screens) */
+.col {
+    background-color: rgb(237, 203, 215); /* soft pink */
+}
+
+/* Tablet size and up */
+@media only screen and (min-width: 768px) {
+    .col {
+        background-color: rgb(192, 240, 219); /* mint green */
+    }
+}
+
+/* Desktop (medium screens and up) */
+@media only screen and (min-width: 992px) {
+    .col {
+        background-color: rgb(185, 228, 236); /* light blue */
+    }
+}
+
+/* Extra large screens */
+@media only screen and (min-width: 1200px) {
+    .col {
+        background-color: rgb(245, 223, 236); /* light lilac */
+    }
+}
+
+/* Orientation: landscape mode */
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+}
